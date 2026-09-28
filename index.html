@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yunyang (Louis) Ye, mathematics undergraduate at Harvey Mudd College. Research in computational statistics, stochastic optimization, and inference from aggregated data.">
+  <meta name="theme-color" content="#142b48">
+  <title>Yunyang (Louis) Ye · Mathematics & Statistics</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="#about" aria-label="Yunyang Ye, home">Yunyang Ye<span class="wordmark-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about" aria-current="location">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#background">Background</a><a class="nav-cv" href="Yunyang-Ye-CV.docx" download>CV <span aria-hidden="true">↓</span></a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <!-- EDIT: Introduction and personal contact details. -->
+  <section class="intro section" id="about" aria-labelledby="name">
+    <div class="intro-main">
+      <p class="eyebrow">Mathematics · Harvey Mudd College</p>
+      <h1 id="name">Yunyang <span>(Louis)</span> Ye</h1>
+      <p class="lead">I study statistical methods for learning from complex and aggregated data.</p>
+      <p class="bio">I’m a mathematics undergraduate at Harvey Mudd College, with research interests in <strong>computational statistics</strong>, <strong>stochastic optimization</strong>, and <strong>inference from aggregated data</strong>.</p>
+      <p class="bio">My current work explores loss-filtered stochastic gradient methods, county-level measles outbreak modeling, and ecological inference of voting behavior.</p>
+      <div class="intro-links"><a class="button" href="mailto:yye@hmc.edu">yye@hmc.edu <span aria-hidden="true">↗</span></a><a class="text-link" href="Yunyang-Ye-CV.docx" download>Download CV <span class="file-label">DOCX</span></a></div>
+    </div>
+    <aside class="profile-note" aria-label="Academic profile">
+      <span class="monogram" aria-hidden="true">YY</span>
+      <p class="eyebrow">At a glance</p>
+      <dl><dt>Education</dt><dd>B.S. Mathematics<br>Harvey Mudd College</dd><dt>Graduation</dt><dd>Expected May 2027</dd><dt>Based in</dt><dd>Claremont, California</dd></dl>
+    </aside>
+  </section>
+  <!-- EDIT: Research project summaries, dates, advisors, and expandable details. -->
+  <section class="section" id="research" aria-labelledby="research-title">
+    <div class="section-heading"><div><p class="eyebrow">01 / Research</p><h2 id="research-title">Questions I’m working on</h2></div><span class="section-note">Theory, computation & applications</span></div>
+    <div class="research-list">
+      <article class="project">
+        <div class="project-meta"><span class="category">Stochastic optimization</span><p>Aug 2026 – Present</p><span class="status">Ongoing</span></div>
+        <div class="project-body"><h3>Batch Quantile Stochastic Gradient Descent</h3><p class="affiliation">Harvey Mudd College · Advisor: Dr. Jamie Haddock<br>Second reader: Dr. Anna Ma, UC Irvine</p><p>Developing batch qk-SGD, a method that filters each mini-batch by an empirical loss quantile and randomly subsamples the retained observations for gradient updates.</p><details><summary>Methods & research questions</summary><div class="detail-content"><ul><li>Studying when the filtered gradient estimator is unbiased for its intended target, distinguishing conditional sampling within a retained batch from unbiasedness for the full-data objective.</li><li>Investigating assumptions for convergence to a minimizer of the retained-sample loss, including how the retained set depends on the current iterate.</li><li>Implementing numerical experiments to connect empirical optimization behavior with ongoing theoretical analysis.</li></ul></div></details></div>
+      </article>
+      <article class="project">
+        <div class="project-meta"><span class="category">Computational statistics</span><p>Jan 2026 – Present</p><span class="status">Ongoing</span></div>
+        <div class="project-body"><h3>Measles Outbreak Prediction</h3><p class="affiliation">Harvey Mudd College · Advisor: Dr. Susan Martonosi</p><p>Modeling outbreak occurrence and magnitude using an integrated 2025 dataset for <strong>221 Texas counties</strong>, combining demographic, socioeconomic, health, vaccination-exemption, enrollment, and case-count variables.</p><details><summary>Methods & findings</summary><div class="detail-content"><ul><li>Compared logistic regression, decision trees, random forests, and gradient-boosted trees; designed Pareto-front selection to identify nondominated classifiers under competing precision and recall objectives.</li><li>Modeled raw case counts with negative binomial regression, LASSO and bidirectional stepwise selection, and selection-adjusted inference. Estimated a rate ratio of 1.64 per one-percentage-point increase in conscientious vaccine exemptions (p = 0.0015).</li><li>Used SHAP values to examine predictor contributions and k-means clustering to characterize county profiles.</li></ul><p>Collaboration: Harvey Mudd, RIT, CSU Long Beach, and Claremont Graduate University. Supported by the Norman F. Sprague III Experiential Learning Fund.</p></div></details></div>
+      </article>
+      <article class="project">
+        <div class="project-meta"><span class="category">Aggregated-data inference</span><p>Aug 2025 – Present</p><span class="status">Ongoing</span></div>
+        <div class="project-body"><h3>Ecological Inference of Voting Behavior</h3><p class="affiliation">Claremont McKenna College · Advisor: Dr. Evan T. Rosenman</p><p>Investigating subgroup voting preferences from Los Angeles precinct returns, with a focus on unobserved race-by-vote relationships and sparse, compositionally inconsistent demographic covariates.</p><details><summary>Methods & findings</summary><div class="detail-content"><ul><li>Built an R pipeline reconciling voter-file and election records, addressing precinct-ID mismatches, missingness, small precincts, and voter-count/tally inconsistencies. Used Bayesian Improved Surname Geocoding (BISG; wru) and precinct aggregation to estimate racial composition.</li><li>Compared semiparametric (seine), Bayesian, and ridge-based estimators through finite-sample sensitivity analyses and simulations with known subgroup preferences.</li><li>Separated real-data aggregate-fit checks from simulated subgroup-recovery tests because individual race-by-vote choices are unobserved.</li><li>Identified seine subgroup estimates outside [0, 1], highlighting the need to assess probability feasibility alongside aggregate fit.</li></ul></div></details></div>
+      </article>
+      <article class="project">
+        <div class="project-meta"><span class="category">Topology & networks</span><p>Aug – Dec 2025</p></div>
+        <div class="project-body"><h3>Topological Bicycle-Network Analysis</h3><p class="affiliation">Pitzer College · Advisor: Dr. Bahar Acu</p><p>Studied connectivity and route redundancy in Claremont’s bicycle network using traffic-thresholded graphs from Strava Metro and OpenStreetMap.</p><details><summary>Methods & findings</summary><div class="detail-content"><ul><li>Constructed nested graphs with preprocessing and multiscale filtration to study removal of low-traffic edges.</li><li>Combined persistent homology and Betti-number summaries with Laplacian spectra and spanning-tree counts.</li><li>Found that connectivity depends primarily on major routes shared with motor traffic, while substantial lower-traffic alternatives remain available, informing the project’s bicycle-planning objective.</li></ul></div></details></div>
+      </article>
+      <article class="project">
+        <div class="project-meta"><span class="category">Discrete geometry</span><p>May – Aug 2025</p></div>
+        <div class="project-body"><h3>Symmetric Edge Polytopes</h3><p class="affiliation">Harvey Mudd College · Advisor: Dr. Andrés R. Vindas Meléndez</p><p>Studied graph-generated lattice polytopes and their fixed-point polytopes under coordinate-permutation actions, connecting graph isomorphisms, symmetries, and lattice-relative volumes.</p><details><summary>Contributions & preprint</summary><div class="detail-content"><ul><li>Contributed to a proof that simple, connected graphs are isomorphic if and only if their symmetric edge polytopes are unitarily equivalent; characterized induced symmetries through coordinate permutations up to global sign.</li><li>Characterized fixed polytopes as linear images of symmetric edge polytopes of contracted graphs; derived volume formulas from permutation cycle lengths, including explicit formulas for complete graphs.</li></ul><p>Partially funded by the Rose Hills Foundation. <a href="https://arxiv.org/abs/2507.18846">Read the 2025 preprint</a>.</p></div></details></div>
+      </article>
+      <article class="project">
+        <div class="project-meta"><span class="category">Data quality & transparency</span><p>Mar 2024 – Dec 2025</p></div>
+        <div class="project-body"><h3>Nonprofit Data Classification & Quality Assurance</h3><p class="affiliation">Wiki Charities · Data Researcher</p><p>Evaluated nonprofit-registration databases across Europe and North America against more than 20 measures of accessibility, classification, usability, and governance. Completed dataset labeling and documented gaps in public registries.</p><p class="project-outcome">Coauthored a resulting study in the <em>Journal of Nonprofit Innovation</em> (2024).</p></div>
+      </article>
+    </div>
+  </section>
+  <!-- EDIT: Keep publication status and author order aligned with the CV. -->
+  <section class="section" id="publications" aria-labelledby="publications-title">
+    <div class="section-heading"><div><p class="eyebrow">02 / Publications</p><h2 id="publications-title">Papers & preprints</h2></div></div>
+    <article class="paper"><div class="paper-year">2025<span>Preprint</span></div><div><h3><a href="https://arxiv.org/abs/2507.18846">Unitary Actions and Equivariant Volumes of Symmetric Edge Polytopes</a></h3><p class="authors">T. A. Cuchilla, J. Hound, C. Plepel, A. R. Vindas-Meléndez, <strong>L. Ye</strong></p><p class="venue">arXiv:2507.18846</p><a class="paper-link" href="https://arxiv.org/abs/2507.18846">View preprint <span aria-hidden="true">↗</span></a></div></article>
+    <article class="paper"><div class="paper-year">2024<span>Journal article</span></div><div><h3><a href="https://scholarsarchive.byu.edu/joni/vol4/iss4/6/">Enhancing Data-Driven Decisions by Improving Nonprofit Transparency and Collaboration: A Study of the Accessibility of Nonprofit Data in the Global Landscape</a></h3><p class="authors">A. Holzer, B. DeWalt, <strong>L. Ye</strong></p><p class="venue"><em>Journal of Nonprofit Innovation</em> 4(4), Article 6</p><a class="paper-link" href="https://scholarsarchive.byu.edu/joni/vol4/iss4/6/">View article <span aria-hidden="true">↗</span></a></div></article>
+  </section>
+  <section class="section" id="presentations" aria-labelledby="presentations-title">
+    <div class="section-heading"><div><p class="eyebrow">03 / Presentations</p><h2 id="presentations-title">Talks & posters</h2></div></div>
+    <div class="presentation"><span class="date">2026</span><div><h3>Demographic and Behavioral Characteristics that Predict Measles Outbreaks</h3><p>INFORMS Annual Meeting · San Francisco</p><span class="status">Poster · Accepted</span></div></div>
+    <div class="presentation"><span class="date">2025–26</span><div><h3>Equivariant Volumes of Symmetric Edge Polytopes</h3><ul class="talk-list"><li>Joint Mathematics Meetings, 2026 · Poster</li><li>MAA Southern California–Nevada Section Meeting, Fall 2025 · Talk</li><li>Claremont Center for the Mathematical Sciences, 2025 · Poster</li></ul></div></div>
+  </section>
+  <section class="section" id="background" aria-labelledby="background-title">
+    <div class="section-heading"><div><p class="eyebrow">04 / Background</p><h2 id="background-title">Education & recognition</h2></div></div>
+    <div class="background-grid">
+      <div><h3 class="small-heading">Education</h3><h4>Harvey Mudd College</h4><p>B.S. Mathematics<br>Expected May 2027 · GPA: 3.924</p><details><summary>Relevant coursework</summary><p class="detail-content">Operations Research, Probability & Statistics, Real Analysis I–II, Linear Algebra, Numerical Linear Algebra, Scientific Computing, Mathematics of Big Data, Discrete Mathematics, Data Structures, Computer Vision, Representation Theory, Abstract Algebra.</p></details></div>
+      <div><h3 class="small-heading">Honors & awards</h3><ul class="awards"><li><span>2026</span><div><strong>Henry A. Krieger Prize in Decision Sciences</strong><p>Harvey Mudd Mathematics · One of two recipients</p></div></li><li><span>2024</span><div><strong>Robert James Prize</strong><p>Harvey Mudd Mathematics · One of two recipients</p></div></li><li><span>2024–26</span><div><strong>Dean’s List</strong><p>Harvey Mudd College · Every graded semester</p></div></li></ul></div>
+    </div>
+    <div class="background-grid secondary-background"><div><h3 class="small-heading">Teaching & service</h3><p>Grader/tutor for Representation Theory, Abstract Algebra, and Data Structures & Program Development; peer tutor for lower-division mathematics and physics.</p><p class="muted">2025 – Present</p></div><div><h3 class="small-heading">Technical skills</h3><dl class="skills"><dt>Languages</dt><dd>Python, R, Julia, Java, C++, LaTeX</dd><dt>Optimization & development</dt><dd>AMPL, Gurobi, Git</dd><dt>R</dt><dd>glmnet, glmmTMB, xgboost, igraph, wru, seine</dd><dt>Python</dt><dd>NumPy, SciPy, pandas, scikit-learn, NetworkX, Gudhi, PyTorch</dd></dl></div></div>
+  </section>
+</main>
+<footer><div><a class="footer-name" href="#about">Yunyang (Louis) Ye</a><p>Mathematics · Harvey Mudd College</p></div><div><a href="mailto:yye@hmc.edu">yye@hmc.edu</a><p>Claremont, California</p></div></footer>
+</body>
+</html>
